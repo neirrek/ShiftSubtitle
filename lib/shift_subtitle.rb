@@ -1,10 +1,6 @@
 require 'time'
 require 'optparse'
 
-# Adding some utility methods to the Time class
-class Time
-end
-
 class SubtitleShifter
 
   # Parses the command line and returns a hash of parameters
@@ -124,6 +120,5 @@ end
 
 if __FILE__ == $0
   # Calling the main method with the parsed arguments
-  args = ARGV.empty? ? ["--operation", "add", "--time", "10,000", "source.srt", "dest.srt"] : ARGV
-  SubtitleShifter.new(args).execute
+  SubtitleShifter.new(ARGV).execute
 end
