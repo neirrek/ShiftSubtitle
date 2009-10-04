@@ -1,0 +1,15 @@
+== ShiftSubtitle
+
+ShiftSubtitle is a Ruby command line script for shifting SRT subtitles of a
+given amount of time.
+
+Usage: shift_subtitle.rb [options] source dest
+    -o, --operation [add|sub]        Operation add or sub to add or subtract a
+                                     given amount of time
+    -t, --time TIME                  The amount of time to shift in the format
+                                     11,222 where 11 is the amount of seconds
+                                     and 222 the amount of milliseconds
+    -h, --help                       Display this screen
+
+This script is provided "as is" under the MIT License (see LICENSE file for more
+details)
